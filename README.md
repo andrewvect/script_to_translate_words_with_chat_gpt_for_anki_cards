@@ -1,8 +1,36 @@
 Script that translate words with chatGpt and create 3 sentences with it.
 It's can be cosy when you need to create anki cards with words.
 
+you will get translated words in json format like this
+
+```json
+{
+  "0": {
+    "id": 0,
+    "content": {
+      "word": "",
+      "translation": "",
+      "examples usage in sentenses": [
+        {
+          "sentence": "",
+          "translation": ""
+        },
+        {
+          "sentence": "",
+          "translation": ""
+        },
+        {
+          "sentence": "",
+          "translation": ""
+        }
+      ]
+    }
+  },
+}
+```
+
 Usage:
-1. add your ChatGpt api key in file .env
+1. add your ChatGpt api key in file .env as OPENAI_API_KEY
 2. add file words.txt in main directory
 You can update promt in file src/services/PromtCreator.py
 3. run script python main.py
