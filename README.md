@@ -31,12 +31,11 @@ you will get translated words in json format like this
 
 Usage:
 1. add your ChatGpt api key in file .env as OPENAI_API_KEY
-2. add file words.txt in main directory
-You can update promt in file src/services/PromtCreator.py
+2. add file words.txt with words (each word in new line) in main directory
 3. run script python main.py
 
 get your translated words with sentences in json format in main directory
 translated_words.json
 
-if word didn't translated or there was error while process it will be in file
+if word didn't translated or there was error while process, it will be in file
 not_translated_words.json
